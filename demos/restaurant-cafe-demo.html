@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juniper Table | Cafe Case Study</title>
+<link rel="stylesheet" href="../showcase.css">
+</head>
+<body class="cafe">
+<div class="progress-bar"><span class="progress-fill"></span></div>
+<header class="wrap nav">
+  <a class="brand" href="#"><span>Modern Cafe and Dining</span>Juniper Table</a>
+  <nav class="navlinks"><a href="#menu">Menu</a><a href="#story">Story</a><a href="#booking">Reserve</a></nav>
+  <a class="button primary" href="#booking">Reserve Table</a>
+</header>
+
+<main>
+  <section class="wrap hero">
+    <div class="reveal">
+      <div class="eyebrow">Hospitality web experience</div>
+      <h1><span class="wordmark">A cafe page that makes people hungry, then makes booking easy.</span></h1>
+      <p class="lead">A premium food-business experience with menu highlights, reservation inquiry, catering leads, message handoff, and visual storytelling.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#booking">Book a Table</a>
+        <a class="button secondary" href="https://wa.me/10000000000">Message to Order</a>
+      </div>
+    </div>
+    <div class="hero-stage reveal">
+      <div class="hero-image"><img src="../assets/cafe-hero.png" alt="Premium cafe interior"></div>
+      <aside class="hero-card">
+        <div class="eyebrow">Reservation ready</div>
+        <p>Move visitors from atmosphere to menu to booking, while capturing catering and event inquiries.</p>
+        <div class="stat-row">
+          <div class="stat"><strong>3</strong><span>Lead types</span></div>
+          <div class="stat"><strong>10</strong><span>Menu blocks</span></div>
+          <div class="stat"><strong>1</strong><span>WhatsApp path</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Menu highlights</span><span>Reservation form</span><span>Catering inquiries</span><span>WhatsApp handoff</span><span>Local SEO-ready sections</span>
+      <span>Menu highlights</span><span>Reservation form</span><span>Catering inquiries</span><span>WhatsApp handoff</span><span>Local SEO-ready sections</span>
+    </div>
+  </div>
+
+  <section class="wrap" id="menu">
+    <div class="section-head reveal">
+      <h2>Menu moments worth clicking.</h2>
+      <p>A restaurant page should not feel like a PDF. It should make the food, mood, and next step instantly obvious.</p>
+    </div>
+    <div class="service-grid">
+      <article class="service-card reveal" data-tilt><img src="../assets/cafe-food.png" alt="Cafe brunch dish"><div class="service-body"><h3>Seasonal Brunch</h3><p>Fresh plated favorites for dine-in and weekend visitors.</p><div class="price">$12+</div></div></article>
+      <article class="service-card reveal" data-tilt><img src="../assets/cafe-coffee.png" alt="Specialty latte"><div class="service-body"><h3>Signature Coffee</h3><p>Latte, espresso, cold brew, and house specials.</p><div class="price">$5+</div></div></article>
+      <article class="service-card reveal" data-tilt><img src="../assets/cafe-catering.png" alt="Cafe catering spread"><div class="service-body"><h3>Private Catering</h3><p>Small events, office platters, and coffee service.</p><div class="price">$80+</div></div></article>
+    </div>
+  </section>
+
+  <section class="wrap split" id="story">
+    <div class="feature-photo reveal"><img src="../assets/cafe-staff.png" alt="Cafe staff serving customer"></div>
+    <div class="panel reveal">
+      <div class="eyebrow">Food-business strategy</div>
+      <h2>Create desire before the visitor reads the menu.</h2>
+      <p>Atmosphere, staff, food, and contact flow all work together. The page supports bookings, catering requests, and daily inquiries without feeling crowded.</p>
+      <div class="mini-grid">
+        <div><b>Table requests</b><span>Simple reservation inquiry</span></div>
+        <div><b>Catering leads</b><span>Event form path</span></div>
+        <div><b>Menu clarity</b><span>Short, visual, readable</span></div>
+        <div><b>WhatsApp path</b><span>Fast manual follow-up</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="section-head reveal">
+      <h2>From storefront to table.</h2>
+      <p>Click through the gallery to show how a restaurant page can make the location, experience, and food feel premium.</p>
+    </div>
+    <div class="gallery reveal" data-gallery>
+      <div class="gallery-main"><img data-gallery-main src="../assets/cafe-counter.png" alt="Cafe counter"></div>
+      <div class="gallery-list">
+        <button class="gallery-btn active" data-gallery-src="../assets/cafe-counter.png" data-gallery-alt="Cafe counter"><img src="../assets/cafe-counter.png" alt=""><span><b>Counter</b><span>Show the ordering moment.</span></span></button>
+        <button class="gallery-btn" data-gallery-src="../assets/cafe-guests.png" data-gallery-alt="Cafe guests"><img src="../assets/cafe-guests.png" alt=""><span><b>Guests</b><span>Social proof through atmosphere.</span></span></button>
+        <button class="gallery-btn" data-gallery-src="../assets/cafe-storefront.png" data-gallery-alt="Cafe storefront"><img src="../assets/cafe-storefront.png" alt=""><span><b>Storefront</b><span>Make the place easy to trust.</span></span></button>
+        <button class="gallery-btn" data-gallery-src="../assets/cafe-prep.png" data-gallery-alt="Cafe food prep"><img src="../assets/cafe-prep.png" alt=""><span><b>Prep</b><span>Behind-the-scenes freshness.</span></span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap split" id="booking">
+    <div class="panel reveal">
+      <div class="eyebrow">Reservation flow</div>
+      <h2>Table or catering request.</h2>
+      <p class="success" id="cafe-success">Inquiry received. The request can notify the cafe and save the details.</p>
+      <form class="form" data-demo-form data-success-target="#cafe-success">
+        <input required placeholder="Name">
+        <input required type="tel" placeholder="Phone number">
+        <select><option>Table reservation</option><option>Catering inquiry</option><option>Private event</option></select>
+        <textarea placeholder="Date, time, number of guests"></textarea>
+        <button class="button primary" type="submit">Send Request</button>
+      </form>
+    </div>
+    <div class="quote-card panel reveal">
+      <h2>“This makes the cafe feel like somewhere I want to go.”</h2>
+      <p>The design avoids cheap coupon-page energy and focuses on appetite, atmosphere, and direct conversion.</p>
+      <a class="button secondary" href="../portfolio-index.html">Back to portfolio</a>
+    </div>
+  </section>
+</main>
+
+<div class="faq-dock" data-faq>
+  <button class="faq-toggle">Ask the Cafe Assistant</button>
+  <div class="faq-panel closed">
+    <button class="faq-question" data-answer="Yes. The form can capture table, catering, or event inquiries and route them to email or Sheets.">Can this collect reservations?</button>
+    <button class="faq-question" data-answer="Yes. Menu items, prices, photos, hours, specials, and WhatsApp details can all be changed.">Can the menu be customized?</button>
+    <button class="faq-question" data-answer="Yes. The page can include a catering CTA, event form, and lead handoff notes.">Can it handle catering leads?</button>
+    <div class="faq-answer">Choose a question to preview the FAQ widget.</div>
+  </div>
+</div>
+
+<footer class="wrap footer">Juniper Table case study for premium restaurant and cafe landing pages.</footer>
+<script src="../showcase.js"></script>
+</body>
+</html>
