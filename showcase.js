@@ -188,6 +188,120 @@ function wireFaq() {
   });
 }
 
+function wireUiuxLab() {
+  const lab = document.querySelector("[data-uiux-lab]");
+  if (!lab) return;
+
+  const modes = {
+    website: {
+      kicker: "Conversion website",
+      title: "Luxury Website System",
+      copy: "High-end landing pages with cinematic sections, lead capture, sticky conversion paths, FAQ logic, and polished mobile behavior.",
+      label: "localcraft.design",
+      metrics: { motion: 94, conversion: 91, responsive: 98 },
+      flow: ["Visit", "Trust", "Book", "Handoff"]
+    },
+    saas: {
+      kicker: "Product interface",
+      title: "SaaS Experience Layer",
+      copy: "Clean product pages and app-style screens with focused onboarding, pricing clarity, feature logic, and smooth state changes.",
+      label: "product-os.app",
+      metrics: { motion: 89, conversion: 95, responsive: 96 },
+      flow: ["Problem", "Feature", "Proof", "Upgrade"]
+    },
+    dashboard: {
+      kicker: "Insight dashboard",
+      title: "Premium Data Dashboard",
+      copy: "Executive-style dashboards with card systems, filters, animated metrics, status boards, and scannable decision views.",
+      label: "insight-suite.io",
+      metrics: { motion: 87, conversion: 88, responsive: 97 },
+      flow: ["Track", "Filter", "Decide", "Export"]
+    },
+    mobile: {
+      kicker: "Mobile flow",
+      title: "App-Style Mobile Journey",
+      copy: "Fast mobile flows for booking, inquiry, onboarding, and service discovery with clear taps, clean hierarchy, and compact motion.",
+      label: "mobile-flow.pro",
+      metrics: { motion: 92, conversion: 93, responsive: 99 },
+      flow: ["Open", "Choose", "Confirm", "Notify"]
+    }
+  };
+
+  const title = lab.querySelector("[data-uiux-title]");
+  const copy = lab.querySelector("[data-uiux-copy]");
+  const kicker = lab.querySelector("[data-uiux-kicker]");
+  const label = lab.querySelector("[data-uiux-window-label]");
+  const flowItems = lab.querySelectorAll(".uiux-flow span");
+
+  const setMode = (modeName) => {
+    const mode = modes[modeName] || modes.website;
+    kicker.textContent = mode.kicker;
+    title.textContent = mode.title;
+    copy.textContent = mode.copy;
+    label.textContent = mode.label;
+    Object.entries(mode.metrics).forEach(([key, value]) => {
+      const metric = lab.querySelector(`[data-uiux-metric="${key}"]`);
+      const bar = lab.querySelector(`[data-uiux-bar="${key}"]`);
+      if (metric) metric.textContent = `${value}%`;
+      if (bar) bar.style.setProperty("--level", `${value}%`);
+    });
+    flowItems.forEach((item, index) => {
+      item.textContent = mode.flow[index] || "";
+      item.classList.toggle("active", index === 0);
+    });
+  };
+
+  lab.querySelectorAll("[data-uiux-mode]").forEach((button) => {
+    button.addEventListener("click", () => {
+      lab.querySelectorAll("[data-uiux-mode]").forEach((item) => {
+        item.classList.remove("active");
+        item.setAttribute("aria-selected", "false");
+      });
+      button.classList.add("active");
+      button.setAttribute("aria-selected", "true");
+      setMode(button.dataset.uiuxMode);
+    });
+  });
+
+  setMode("website");
+}
+
+function wireUiuxPreviewMotion() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  document.querySelectorAll("[data-uiux-preview]").forEach((preview) => {
+    preview.addEventListener("pointermove", (event) => {
+      const rect = preview.getBoundingClientRect();
+      const x = (event.clientX - rect.left) / rect.width - 0.5;
+      const y = (event.clientY - rect.top) / rect.height - 0.5;
+      preview.style.setProperty("--ry", `${x * 5}deg`);
+      preview.style.setProperty("--rx", `${y * -5}deg`);
+    });
+    preview.addEventListener("pointerleave", () => {
+      preview.style.setProperty("--ry", "0deg");
+      preview.style.setProperty("--rx", "0deg");
+    });
+  });
+}
+
+function wireLogicBoard() {
+  const statuses = {
+    "New Lead": "Lead captured and ready for handoff.",
+    "Booked Call": "Discovery call request routed to the owner.",
+    "Sheet Saved": "Customer details prepared for a simple CRM sheet.",
+    "WhatsApp Sent": "Follow-up message is ready for WhatsApp handoff."
+  };
+  document.querySelectorAll("[data-logic-board]").forEach((board) => {
+    const status = board.querySelector("[data-logic-status]");
+    board.querySelectorAll(".logic-chip").forEach((button) => {
+      button.addEventListener("click", () => {
+        board.querySelectorAll(".logic-chip").forEach((item) => item.classList.remove("active"));
+        button.classList.add("active");
+        status.textContent = statuses[button.textContent.trim()] || statuses["New Lead"];
+      });
+    });
+  });
+}
+
 wireProgress();
 wireCursorGlow();
 animateWordmarks();
@@ -201,3 +315,6 @@ wireForms();
 wireFilters();
 wireBeforeAfter();
 wireFaq();
+wireUiuxLab();
+wireUiuxPreviewMotion();
+wireLogicBoard();
