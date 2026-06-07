@@ -328,6 +328,175 @@ function wireDesignerPreviewMotion() {
   });
 }
 
+function wireLeadDemo() {
+  document.querySelectorAll("[data-lead-demo]").forEach((demo) => {
+    const form = demo.querySelector("[data-lead-form]");
+    const timeline = demo.querySelectorAll("[data-lead-timeline] b");
+    const table = demo.querySelector("[data-lead-table]");
+    const handoff = demo.querySelector("[data-lead-handoff]");
+    if (!form || !table || !handoff) return;
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const data = new FormData(form);
+      const lead = {
+        name: data.get("name") || "New visitor",
+        service: data.get("service") || "Landing page",
+        contact: data.get("contact") || "contact@example.com"
+      };
+
+      timeline.forEach((item) => item.classList.remove("active"));
+      timeline.forEach((item, index) => {
+        setTimeout(() => item.classList.add("active"), index * 180);
+      });
+
+      table.innerHTML = `
+        <div class="lead-row">
+          <strong>${lead.name}</strong>
+          <span>${lead.service}</span>
+          <span>${lead.contact}</span>
+          <em class="status-chip">Follow-up ready</em>
+        </div>
+      `;
+      handoff.classList.add("ready");
+      handoff.querySelector("p").textContent = `WhatsApp/email handoff prepared for ${lead.name}: confirm the request, share a booking link, and mark the follow-up as ready.`;
+      form.reset();
+    });
+  });
+}
+
+function wireBookingDemo() {
+  document.querySelectorAll("[data-booking-demo]").forEach((demo) => {
+    const steps = [...demo.querySelectorAll(".booking-step")];
+    const progress = demo.querySelector("[data-booking-progress]");
+    const summary = demo.querySelector("[data-booking-summary]");
+    const state = { service: "Premium landing page", time: "Tomorrow morning", name: "", email: "", notes: "" };
+    let current = 0;
+
+    const showStep = (index) => {
+      current = Math.max(0, Math.min(index, steps.length - 1));
+      steps.forEach((step, stepIndex) => step.classList.toggle("active", stepIndex === current));
+      if (progress) progress.style.setProperty("--progress", `${((current + 1) / steps.length) * 100}%`);
+    };
+
+    const renderSummary = () => {
+      if (!summary) return;
+      summary.innerHTML = `
+        <span>Handoff Preview</span>
+        <h2>${state.service}</h2>
+        <p>${state.name || "Client"} requested ${state.time}. Contact: ${state.email || "not added yet"}. Notes: ${state.notes || "No extra notes."}</p>
+      `;
+    };
+
+    demo.querySelectorAll("[data-booking-value]").forEach((button) => {
+      button.addEventListener("click", () => {
+        if (current === 0) state.service = button.dataset.bookingValue;
+        if (current === 1) state.time = button.dataset.bookingValue;
+        renderSummary();
+        showStep(current + 1);
+      });
+    });
+
+    demo.querySelectorAll("[data-booking-next]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const name = demo.querySelector("[data-booking-name]");
+        const email = demo.querySelector("[data-booking-email]");
+        const notes = demo.querySelector("[data-booking-notes]");
+        if (name) state.name = name.value || state.name || "Client";
+        if (email) state.email = email.value || state.email || "client@example.com";
+        if (notes) state.notes = notes.value || "Website redesign request";
+        renderSummary();
+        showStep(current + 1);
+      });
+    });
+
+    renderSummary();
+    showStep(0);
+  });
+}
+
+function wireChatDemo() {
+  document.querySelectorAll("[data-chat-demo]").forEach((demo) => {
+    const log = demo.querySelector("[data-chat-log]");
+    if (!log) return;
+
+    const addMessage = (text, type) => {
+      const message = document.createElement("div");
+      message.className = `message ${type}`;
+      message.textContent = text;
+      log.appendChild(message);
+      log.scrollTop = log.scrollHeight;
+    };
+
+    demo.querySelectorAll("[data-chat-answer]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const answer = button.dataset.chatAnswer;
+        addMessage(button.textContent.trim(), "user");
+        setTimeout(() => addMessage(answer, "bot"), 180);
+      });
+    });
+  });
+}
+
+function wireAuditDemo() {
+  const audits = {
+    cta: {
+      title: "CTA Clarity",
+      before: "Weak buttons compete with headings and the visitor has no obvious next step.",
+      after: "One primary booking path is visible above the fold, repeated after proof and pricing.",
+      reco: "Use one dominant action, reduce secondary links, and place a benefit-focused CTA near each decision point."
+    },
+    mobile: {
+      title: "Mobile Layout",
+      before: "Images are too tall, text stacks awkwardly, and important actions fall below the first screen.",
+      after: "Compact hero rhythm, stable image ratios, and 44px tap targets keep the page easy to scan.",
+      reco: "Set fixed aspect ratios, tighten mobile spacing, and turn wide tables into stacked cards."
+    },
+    trust: {
+      title: "Trust Signals",
+      before: "Visitors see offers but not enough proof, process clarity, or credibility markers.",
+      after: "Proof cards, service outcomes, before/after states, and a clear delivery process support the offer.",
+      reco: "Add social proof, visible process steps, realistic outcomes, and a small guarantee or response-time promise."
+    },
+    content: {
+      title: "Content Hierarchy",
+      before: "The page reads like scattered information instead of a guided conversion story.",
+      after: "The page moves from problem to offer, proof, service fit, FAQ, and final handoff.",
+      reco: "Rewrite sections around decisions: what it is, who it helps, why trust it, and what to do next."
+    },
+    form: {
+      title: "Form Friction",
+      before: "The form asks too much too early and does not show what happens after submission.",
+      after: "A short form captures the essentials and previews the follow-up workflow.",
+      reco: "Ask for name, contact, service, and notes first. Show confirmation, owner handoff, and next response timing."
+    }
+  };
+
+  document.querySelectorAll("[data-audit-demo]").forEach((demo) => {
+    const before = demo.querySelector("[data-audit-before]");
+    const after = demo.querySelector("[data-audit-after]");
+    const reco = demo.querySelector("[data-audit-reco]");
+
+    const setAudit = (key) => {
+      const item = audits[key] || audits.cta;
+      if (before) before.textContent = item.before;
+      if (after) after.textContent = item.after;
+      if (reco) {
+        reco.querySelector("h2").textContent = item.title;
+        reco.querySelector("p").textContent = item.reco;
+      }
+      demo.querySelectorAll("[data-audit]").forEach((button) => {
+        button.classList.toggle("active", button.dataset.audit === key);
+      });
+    };
+
+    demo.querySelectorAll("[data-audit]").forEach((button) => {
+      button.addEventListener("click", () => setAudit(button.dataset.audit));
+    });
+    setAudit("cta");
+  });
+}
+
 wireProgress();
 wireCursorGlow();
 animateWordmarks();
@@ -346,3 +515,7 @@ wireUiuxPreviewMotion();
 wireLogicBoard();
 wireCaseStudies();
 wireDesignerPreviewMotion();
+wireLeadDemo();
+wireBookingDemo();
+wireChatDemo();
+wireAuditDemo();

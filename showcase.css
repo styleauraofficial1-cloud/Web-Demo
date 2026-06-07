@@ -2089,6 +2089,89 @@ body.designer-portfolio::before {
   margin: 0;
 }
 
+.automation-demo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.automation-demo-card {
+  min-height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--dp-line);
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.03)),
+    var(--dp-surface);
+  box-shadow: var(--dp-shadow);
+  transition: transform 240ms ease, border-color 240ms ease;
+}
+
+.automation-demo-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(85, 214, 242, 0.45);
+}
+
+.automation-demo-card img {
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  object-fit: cover;
+  display: block;
+}
+
+.automation-demo-card div {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+}
+
+.automation-demo-card span,
+.sim-panel > span,
+.handoff-card span,
+.booking-summary span,
+.chat-header span,
+.audit-reco span {
+  color: var(--dp-cyan);
+  font-size: 12px;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.automation-demo-card h3 {
+  margin: 0;
+  color: var(--dp-text);
+  font-size: 22px;
+  line-height: 1.12;
+}
+
+.automation-demo-card p {
+  color: var(--dp-muted);
+  margin: 0;
+}
+
+.proof-strip {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.proof-strip span {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--dp-line);
+  border-radius: 8px;
+  padding: 10px;
+  color: var(--dp-text);
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 13px;
+  font-weight: 850;
+  text-align: center;
+}
+
 .ai-eval-panel,
 .resume-strip {
   display: grid;
@@ -2371,6 +2454,350 @@ body.designer-portfolio::before {
   font-weight: 820;
 }
 
+.automation-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 18% 8%, rgba(85, 214, 242, 0.16), transparent 30%),
+    radial-gradient(circle at 86% 14%, rgba(229, 185, 111, 0.12), transparent 28%),
+    var(--dp-bg);
+  color: var(--dp-text);
+}
+
+.automation-page .portfolio-nav {
+  margin-top: 18px;
+}
+
+.automation-page .section-intro {
+  padding-top: 58px;
+}
+
+.automation-hero {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 22px;
+  align-items: center;
+  padding: 72px 0 34px;
+}
+
+.automation-hero h1 {
+  margin: 12px 0 14px;
+  color: var(--dp-text);
+  font-size: clamp(52px, 8vw, 112px);
+  line-height: 0.9;
+  max-width: 10ch;
+}
+
+.automation-hero p {
+  max-width: 680px;
+  color: var(--dp-muted);
+  font-size: 18px;
+}
+
+.automation-hero img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border: 1px solid var(--dp-line);
+  border-radius: 8px;
+  box-shadow: var(--dp-shadow);
+}
+
+.automation-workbench,
+.booking-sim,
+.chat-sim,
+.audit-sim {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 18px;
+  align-items: start;
+  padding-bottom: 76px;
+}
+
+.booking-sim,
+.chat-sim,
+.audit-sim {
+  grid-template-columns: 0.82fr 1.18fr;
+}
+
+.sim-panel,
+.handoff-card,
+.booking-summary,
+.chat-window,
+.audit-reco,
+.audit-before,
+.audit-after {
+  border: 1px solid var(--dp-line);
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.035)),
+    var(--dp-surface);
+  box-shadow: 0 22px 80px rgba(0, 0, 0, 0.26);
+}
+
+.sim-panel,
+.handoff-card,
+.booking-summary,
+.audit-reco {
+  padding: 22px;
+}
+
+.sim-panel h2,
+.handoff-card h2,
+.booking-summary h2,
+.audit-reco h2 {
+  margin: 10px 0 10px;
+  color: var(--dp-text);
+  font-size: clamp(24px, 3vw, 38px);
+  line-height: 1.04;
+}
+
+.sim-panel p,
+.handoff-card p,
+.booking-summary p,
+.audit-reco p {
+  color: var(--dp-muted);
+  margin: 0;
+}
+
+.sim-form,
+.booking-step.active {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.booking-step {
+  display: none;
+}
+
+.sim-form input,
+.sim-form select,
+.booking-step input,
+.booking-step textarea {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid var(--dp-line);
+  border-radius: 8px;
+  padding: 12px 13px;
+  color: var(--dp-text);
+  background: rgba(255, 255, 255, 0.07);
+  font: inherit;
+}
+
+.sim-form input::placeholder,
+.booking-step input::placeholder,
+.booking-step textarea::placeholder {
+  color: rgba(234, 241, 255, 0.54);
+}
+
+.sim-timeline {
+  display: grid;
+  gap: 10px;
+}
+
+.sim-timeline b {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--dp-line);
+  border-radius: 8px;
+  padding: 11px 13px;
+  color: var(--dp-muted);
+  background: rgba(255, 255, 255, 0.05);
+  transition: color 240ms ease, border-color 240ms ease, transform 240ms ease;
+}
+
+.sim-timeline b.active {
+  color: var(--dp-text);
+  border-color: rgba(85, 214, 242, 0.58);
+  transform: translateX(4px);
+}
+
+.lead-table {
+  display: grid;
+  gap: 10px;
+}
+
+.lead-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.1fr auto;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid var(--dp-line);
+  border-radius: 8px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.status-chip {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 7px 10px;
+  color: #061019;
+  background: var(--dp-cyan);
+  font-size: 12px;
+  font-weight: 950;
+}
+
+.handoff-card.ready {
+  border-color: rgba(229, 185, 111, 0.54);
+}
+
+.booking-progress {
+  height: 10px;
+  overflow: hidden;
+  border: 1px solid var(--dp-line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  margin: 16px 0;
+}
+
+.booking-progress span,
+.booking-progress i {
+  display: block;
+  width: var(--progress, 25%);
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--dp-cyan), var(--dp-gold));
+  transition: width 260ms ease;
+}
+
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.choice-grid button,
+.booking-step button,
+.quick-replies button,
+.audit-options button {
+  min-height: 44px;
+  border: 1px solid var(--dp-line);
+  border-radius: 8px;
+  padding: 11px 12px;
+  color: var(--dp-text);
+  background: rgba(255, 255, 255, 0.07);
+  font: inherit;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.choice-grid button:hover,
+.booking-step button:hover,
+.quick-replies button:hover,
+.audit-options button:hover,
+.audit-options button.active {
+  border-color: rgba(85, 214, 242, 0.58);
+  background: rgba(85, 214, 242, 0.12);
+}
+
+.chat-window {
+  overflow: hidden;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  border-bottom: 1px solid var(--dp-line);
+}
+
+.chat-log {
+  min-height: 420px;
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  padding: 16px;
+}
+
+.message,
+.chat-log p.bot {
+  max-width: 78%;
+  border: 1px solid var(--dp-line);
+  border-radius: 8px;
+  padding: 11px 12px;
+  color: var(--dp-text);
+  background: rgba(255, 255, 255, 0.07);
+  animation: messageIn 220ms ease both;
+}
+
+.message.user {
+  justify-self: end;
+  background: rgba(85, 214, 242, 0.13);
+}
+
+.quick-replies,
+.audit-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 14px;
+}
+
+.sim-panel.audit-options {
+  display: grid;
+  gap: 10px;
+  padding-top: 22px;
+}
+
+.sim-panel.audit-options h2 {
+  margin-bottom: 4px;
+}
+
+.audit-preview {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.audit-before,
+.audit-after {
+  min-height: 360px;
+  display: grid;
+  align-content: end;
+  gap: 14px;
+  padding: 20px;
+}
+
+.audit-before {
+  background:
+    linear-gradient(180deg, rgba(229, 85, 85, 0.14), rgba(255, 255, 255, 0.04)),
+    var(--dp-surface);
+}
+
+.audit-after {
+  background:
+    linear-gradient(180deg, rgba(85, 214, 242, 0.16), rgba(255, 255, 255, 0.04)),
+    var(--dp-surface);
+}
+
+.audit-before b,
+.audit-after b {
+  color: var(--dp-text);
+  font-size: 24px;
+}
+
+.audit-before span,
+.audit-after span {
+  color: var(--dp-muted);
+}
+
+@keyframes messageIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .designer-footer {
   width: min(1180px, calc(100vw - 40px));
   margin: 40px auto 0;
@@ -2387,6 +2814,13 @@ body.designer-portfolio::before {
   .section-split,
   .visual-proof,
   .live-demo-grid,
+  .automation-demo-grid,
+  .automation-hero,
+  .automation-workbench,
+  .booking-sim,
+  .chat-sim,
+  .audit-sim,
+  .audit-preview,
   .ai-eval-panel,
   .resume-strip,
   .case-hero,
@@ -2409,6 +2843,10 @@ body.designer-portfolio::before {
 
   .process-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .proof-strip {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -2476,6 +2914,8 @@ body.designer-portfolio::before {
   .project-card img,
   .proof-card img,
   .live-demo-card img,
+  .automation-demo-card img,
+  .automation-hero img,
   .case-hero-img,
   .case-image-grid img,
   .ai-eval-panel img {
@@ -2520,6 +2960,39 @@ body.designer-portfolio::before {
     width: min(calc(100vw - 28px), 420px);
     margin: 12px auto 0;
     justify-content: center;
+  }
+
+  .proof-strip,
+  .choice-grid,
+  .lead-row {
+    grid-template-columns: 1fr;
+  }
+
+  .automation-workbench,
+  .booking-sim,
+  .chat-sim,
+  .audit-sim {
+    padding-bottom: 48px;
+  }
+
+  .sim-panel,
+  .handoff-card,
+  .booking-summary,
+  .audit-reco {
+    padding: 18px;
+  }
+
+  .chat-log {
+    min-height: 300px;
+  }
+
+  .message {
+    max-width: 92%;
+  }
+
+  .audit-before,
+  .audit-after {
+    min-height: 260px;
   }
 }
 

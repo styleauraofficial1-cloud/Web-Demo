@@ -26,12 +26,20 @@ Case studies:
 - `demos/dental-clinic-demo.html` - Vera Dental House clinic case study.
 - `demos/restaurant-cafe-demo.html` - Juniper Table cafe case study.
 
+Interactive automation prototypes:
+
+- `interactive-demos/lead-automation-demo.html` - simulated lead capture workflow with table, timeline, alert, WhatsApp handoff, and follow-up status.
+- `interactive-demos/booking-flow-demo.html` - multi-step booking/contact flow with progress, summary state, and handoff preview.
+- `interactive-demos/chatbot-widget-demo.html` - FAQ chatbot widget prototype with quick replies and contact handoff thinking.
+- `interactive-demos/redesign-audit-demo.html` - website audit simulator for CTA clarity, mobile layout, trust signals, hierarchy, and form friction.
+
 Public portfolio features:
 
 - Saim Mirza hero section with role positioning
 - About, skills, process, services, and contact sections
 - 6 concept project cards with honest UI/UX project framing
 - 3 full case-study pages for featured portfolio projects
+- 4 interactive automation concept demos for lead capture, booking, chatbot FAQ, and redesign audits
 - More interface concepts for clinic, cafe, chatbot, redesign audit, booking flow, and AI interface work
 - New generated portfolio image pack integrated from `assets/portfolio_images_renamed_batches/`
 - Dedicated live demo section linking to salon, clinic, and restaurant subpages
@@ -46,6 +54,7 @@ Public portfolio features:
 - Moving trust marquee
 - Interactive UI/UX lab for websites, SaaS screens, dashboards, and mobile flows
 - Animated interface preview with responsive metrics and handoff logic states
+- Front-end automation simulations that clearly avoid claiming live Google Sheets, Zapier, WhatsApp, or email API integrations
 - Clickable image galleries
 - Salon before/after slider
 - Lead/contact form prototypes

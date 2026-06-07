@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking Flow Interactive Prototype | Saim Mirza</title>
+<link rel="stylesheet" href="../showcase.css">
+</head>
+<body class="designer-portfolio automation-page">
+<div class="progress-bar"><span class="progress-fill"></span></div>
+<header class="portfolio-nav"><a class="designer-logo" href="../portfolio-index.html"><span>SM</span><strong>Saim Mirza</strong></a><nav class="designer-links"><a href="../portfolio-index.html#interactive-demos">Demos</a><a href="../portfolio-index.html#projects">Projects</a><a href="../portfolio-index.html#contact">Contact</a></nav><a class="designer-btn primary" href="../portfolio-index.html">Portfolio</a></header>
+<main>
+  <section class="automation-hero designer-wrap">
+    <div><span class="section-label">Interactive Prototype</span><h1>Booking Flow Demo</h1><p>A multi-step booking/contact form simulation with progress state, validation-style feedback, summary card, and admin handoff preview.</p></div>
+    <img src="../assets/portfolio_images_renamed_batches/batch-02/batch-02-image-09-booking-form-flow-cover.png" alt="Booking form flow preview">
+  </section>
+  <section class="designer-wrap booking-sim" data-booking-demo>
+    <div class="booking-progress"><i data-booking-progress></i></div>
+    <div class="booking-step active" data-step="0"><span>Step 1</span><h2>Choose service</h2><button data-booking-value="Premium landing page">Premium landing page</button><button data-booking-value="Booking form setup">Booking form setup</button><button data-booking-value="Chatbot FAQ widget">Chatbot FAQ widget</button></div>
+    <div class="booking-step" data-step="1"><span>Step 2</span><h2>Preferred time</h2><button data-booking-value="Today">Today</button><button data-booking-value="This week">This week</button><button data-booking-value="Flexible">Flexible</button></div>
+    <div class="booking-step" data-step="2"><span>Step 3</span><h2>Contact details</h2><label>Name<input data-booking-name value="Local Studio Owner"></label><label>Email<input data-booking-email value="owner@example.com"></label><button data-booking-next>Continue</button></div>
+    <div class="booking-step" data-step="3"><span>Step 4</span><h2>Project notes</h2><textarea data-booking-notes>Need a cleaner website and inquiry form.</textarea><button data-booking-next>Confirm request</button></div>
+    <aside class="booking-summary sim-panel"><span>Live summary</span><h2>Handoff preview</h2><div data-booking-summary>Choose a service to begin.</div></aside>
+  </section>
+</main>
+<footer class="designer-footer">Front-end simulation only. Designed to demonstrate booking UX and handoff logic.</footer>
+<script src="../showcase.js"></script>
+</body>
+</html>

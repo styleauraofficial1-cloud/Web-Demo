@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Audit Simulator | Saim Mirza</title>
+<link rel="stylesheet" href="../showcase.css">
+</head>
+<body class="designer-portfolio automation-page">
+<div class="progress-bar"><span class="progress-fill"></span></div>
+<header class="portfolio-nav"><a class="designer-logo" href="../portfolio-index.html"><span>SM</span><strong>Saim Mirza</strong></a><nav class="designer-links"><a href="../portfolio-index.html#interactive-demos">Demos</a><a href="../portfolio-index.html#projects">Projects</a><a href="../portfolio-index.html#contact">Contact</a></nav><a class="designer-btn primary" href="../portfolio-index.html">Portfolio</a></header>
+<main>
+  <section class="automation-hero designer-wrap">
+    <div><span class="section-label">Interactive Prototype</span><h1>Website Audit Simulator</h1><p>Select common UX issues and see recommendation cards update like a quick redesign audit prototype.</p></div>
+    <img src="../assets/portfolio_images_renamed_batches/batch-04/batch-04-image-05-fiverr-redesign-audit.png" alt="Website redesign audit preview">
+  </section>
+  <section class="designer-wrap audit-sim" data-audit-demo>
+    <div class="sim-panel audit-options">
+      <span>Audit checklist</span><h2>Select an issue</h2>
+      <button class="active" data-audit="cta">CTA clarity</button><button data-audit="mobile">Mobile layout</button><button data-audit="trust">Trust signals</button><button data-audit="content">Content hierarchy</button><button data-audit="form">Form friction</button>
+    </div>
+    <div class="audit-preview">
+      <div class="audit-before"><b>Before</b><span data-audit-before>Weak primary action</span></div>
+      <div class="audit-after"><b>After</b><span data-audit-after>Clear repeated CTA and stronger button hierarchy</span></div>
+    </div>
+    <aside class="sim-panel" data-audit-reco><span>Recommendation</span><h2>CTA clarity</h2><p>Make the main action visible above the fold, repeat it after proof sections, and use one dominant action style.</p></aside>
+  </section>
+</main>
+<footer class="designer-footer">Front-end simulation only. Designed to demonstrate redesign audit thinking.</footer>
+<script src="../showcase.js"></script>
+</body>
+</html>
