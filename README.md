@@ -1,6 +1,6 @@
-# LocalCraft Web Showcase
+# Saim Mirza UI/UX Designer Portfolio
 
-Premium local-business web showcase for beauty, healthcare, and hospitality brands.
+Professional UI/UX designer portfolio for landing pages, web interfaces, chatbot UI, lead capture flows, booking/contact flows, and AI-assisted product evaluation.
 
 Live site:
 [https://styleauraofficial1-cloud.github.io/Web-Demo/](https://styleauraofficial1-cloud.github.io/Web-Demo/)
@@ -13,7 +13,7 @@ GitHub repo:
 Open locally:
 
 - `index.html` - entry page that opens the showcase.
-- `portfolio-index.html` - main professional portfolio hub.
+- `portfolio-index.html` - main professional UI/UX portfolio hub.
 - `showcase.css` - shared premium visual system.
 - `showcase.js` - shared interactions and animations.
 
@@ -23,9 +23,13 @@ Case studies:
 - `demos/dental-clinic-demo.html` - Vera Dental House clinic case study.
 - `demos/restaurant-cafe-demo.html` - Juniper Table cafe case study.
 
-Public showcase features:
+Public portfolio features:
 
-- Premium hero layouts
+- Saim Mirza hero section with role positioning
+- About, skills, process, services, and contact sections
+- 6 concept project cards with honest UI/UX project framing
+- Expandable case-study breakdowns
+- Premium hero interface mockup
 - Animated wordmark headings
 - Scroll progress indicator
 - Cursor glow and image spotlight effects

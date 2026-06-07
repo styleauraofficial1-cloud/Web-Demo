@@ -302,6 +302,32 @@ function wireLogicBoard() {
   });
 }
 
+function wireCaseStudies() {
+  document.querySelectorAll(".case-toggle").forEach((button) => {
+    button.addEventListener("click", () => {
+      const isExpanded = button.getAttribute("aria-expanded") === "true";
+      button.setAttribute("aria-expanded", String(!isExpanded));
+    });
+  });
+}
+
+function wireDesignerPreviewMotion() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  document.querySelectorAll("[data-designer-preview]").forEach((preview) => {
+    preview.addEventListener("pointermove", (event) => {
+      const rect = preview.getBoundingClientRect();
+      const x = (event.clientX - rect.left) / rect.width - 0.5;
+      const y = (event.clientY - rect.top) / rect.height - 0.5;
+      preview.style.setProperty("--ry", `${x * 4}deg`);
+      preview.style.setProperty("--rx", `${y * -4}deg`);
+    });
+    preview.addEventListener("pointerleave", () => {
+      preview.style.setProperty("--ry", "0deg");
+      preview.style.setProperty("--rx", "0deg");
+    });
+  });
+}
+
 wireProgress();
 wireCursorGlow();
 animateWordmarks();
@@ -318,3 +344,5 @@ wireFaq();
 wireUiuxLab();
 wireUiuxPreviewMotion();
 wireLogicBoard();
+wireCaseStudies();
+wireDesignerPreviewMotion();
