@@ -28,6 +28,8 @@ Public portfolio features:
 - Saim Mirza hero section with role positioning
 - About, skills, process, services, and contact sections
 - 6 concept project cards with honest UI/UX project framing
+- New generated portfolio image pack integrated from `assets/portfolio_images_renamed_batches/`
+- Dedicated live demo section linking to salon, clinic, and restaurant subpages
 - Expandable case-study breakdowns
 - Premium hero interface mockup
 - Animated wordmark headings
