@@ -19,6 +19,9 @@ Open locally:
 
 Case studies:
 
+- `case-studies/local-business-landing-page.html` - full local-business UI/UX case study.
+- `case-studies/salon-beauty-booking.html` - full salon booking UI/UX case study.
+- `case-studies/lead-capture-automation.html` - full lead capture workflow UI/UX case study.
 - `demos/salon-beauty-demo.html` - Maison Liora beauty studio case study.
 - `demos/dental-clinic-demo.html` - Vera Dental House clinic case study.
 - `demos/restaurant-cafe-demo.html` - Juniper Table cafe case study.
@@ -28,8 +31,11 @@ Public portfolio features:
 - Saim Mirza hero section with role positioning
 - About, skills, process, services, and contact sections
 - 6 concept project cards with honest UI/UX project framing
+- 3 full case-study pages for featured portfolio projects
+- More interface concepts for clinic, cafe, chatbot, redesign audit, booking flow, and AI interface work
 - New generated portfolio image pack integrated from `assets/portfolio_images_renamed_batches/`
 - Dedicated live demo section linking to salon, clinic, and restaurant subpages
+- Polished resume PDF at `assets/Saim-Mirza-UIUX-Resume.pdf`
 - Expandable case-study breakdowns
 - Premium hero interface mockup
 - Animated wordmark headings
