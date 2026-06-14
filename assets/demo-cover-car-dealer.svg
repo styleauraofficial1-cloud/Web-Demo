@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Car dealership demo cover">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06080d"/><stop offset=".52" stop-color="#111827"/><stop offset="1" stop-color="#ff7b2f"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="1600" height="1000" fill="url(#g)"/>
+  <path d="M80 670 C330 530 530 500 760 610 C980 715 1240 680 1520 520" stroke="#4fd8ff" stroke-width="4" opacity=".28" fill="none"/>
+  <g filter="url(#glow)" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M560 610l92-150c30-48 82-76 138-76h278c70 0 132 38 165 100l62 116" stroke="#f3cc74" stroke-width="24"/><path d="M480 620h880" stroke="#4fd8ff" stroke-width="22"/><circle cx="690" cy="660" r="72" stroke="#ff7b2f" stroke-width="22"/><circle cx="1180" cy="660" r="72" stroke="#ff7b2f" stroke-width="22"/></g>
+  <text x="92" y="150" fill="#ffd88a" font-family="Arial, sans-serif" font-weight="800" font-size="44">SHADOW RISER DEMO</text>
+  <text x="92" y="250" fill="#fff" font-family="Arial, sans-serif" font-weight="900" font-size="108">Car Dealer Funnel</text>
+  <text x="96" y="326" fill="#d8e2ee" font-family="Arial, sans-serif" font-size="42">Inventory, finance lead, test-drive booking</text>
+</svg>

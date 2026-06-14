@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Gym trainer demo cover">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07131b"/><stop offset=".48" stop-color="#0c1118"/><stop offset="1" stop-color="#13f2a4"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="1600" height="1000" fill="url(#g)"/>
+  <path d="M0 780 C320 610 512 690 800 520 C1050 370 1260 330 1600 180 L1600 1000 L0 1000Z" fill="#03070b" opacity=".82"/>
+  <g stroke="#4fd8ff" stroke-width="2" opacity=".2"><path d="M100 160H1500M100 320H1500M100 480H1500M100 640H1500M260 80V900M520 80V900M780 80V900M1040 80V900M1300 80V900"/></g>
+  <g filter="url(#glow)"><circle cx="1060" cy="360" r="126" fill="none" stroke="#13f2a4" stroke-width="22"/><path d="M710 658c90-190 225-287 405-318M808 508l-158-92M907 426l-74-162M1008 368l178-122" fill="none" stroke="#4fd8ff" stroke-width="32" stroke-linecap="round"/><path d="M590 735h430" stroke="#ff7b2f" stroke-width="16" stroke-linecap="round"/></g>
+  <text x="92" y="150" fill="#7fffd8" font-family="Arial, sans-serif" font-weight="800" font-size="44">SHADOW RISER DEMO</text>
+  <text x="92" y="250" fill="#fff" font-family="Arial, sans-serif" font-weight="900" font-size="108">Gym Trial Funnel</text>
+  <text x="96" y="326" fill="#c7d8e8" font-family="Arial, sans-serif" font-size="42">Trial class, membership inquiry, coach handoff</text>
+</svg>

@@ -1,0 +1,399 @@
+IMAGE PROMPTS AND SPECS FOR PORTFOLIO DEMOS
+
+Use these prompts to generate or collect better images for the salon, dental/clinic, and restaurant/cafe portfolio pages.
+
+Best overall format:
+- Hero images: 16:9 landscape, 1920x1080 minimum, ideally 2400x1350 or 3000x1688
+- Section/card images: 4:3 or 3:2 landscape, 1600x1200 or 1800x1200
+- Detail/close-up images: 1:1 square, 1200x1200 or 1600x1600
+- Portrait/team images: 4:5 portrait, 1600x2000
+- File type: JPG or PNG
+- Quality: sharp, natural lighting, no blur, no watermark
+- Avoid: fake text, unreadable signs, distorted hands/faces, heavy filters, logos unless it is the real business logo
+- Naming style: salon-hero.jpg, salon-service-1.jpg, clinic-hero.jpg, cafe-food-1.jpg
+
+Recommended image count per demo:
+- Minimum: 5 images
+- Good: 8 images
+- Best: 10-12 images
+
+==================================================
+SALON / BEAUTY BUSINESS DEMO
+==================================================
+
+1. Salon Hero Image
+Use for: top hero section
+Resolution: 2400x1350 or 1920x1080
+Aspect ratio: 16:9 landscape
+Prompt:
+Photorealistic premium beauty salon interior, warm natural daylight, modern styling chairs, large mirrors, clean counters, elegant but realistic local business feel, soft neutral colors with subtle rose accents, high-end editorial photography, wide horizontal website hero composition, no text, no logos, no watermark.
+
+Suggested filename:
+salon-hero.jpg
+
+2. Stylist Working With Client
+Use for: trust/service section
+Resolution: 1800x1200
+Aspect ratio: 3:2 landscape
+Prompt:
+Photorealistic hair stylist working with a client in a modern salon, natural relaxed moment, stylist focused, client comfortable, warm daylight, clean background, professional local business photography, realistic skin and hair texture, no text, no logos, no watermark.
+
+Suggested filename:
+salon-stylist-client.jpg
+
+3. Finished Hairstyle Close-Up
+Use for: service card or gallery
+Resolution: 1600x1600
+Aspect ratio: 1:1 square
+Prompt:
+Photorealistic close-up of a finished salon hairstyle, healthy shiny hair, elegant styling, soft studio-natural light, premium beauty editorial style, clean background, realistic detail, no text, no logos, no watermark.
+
+Suggested filename:
+salon-finished-hair.jpg
+
+4. Salon Tools And Products
+Use for: detail image
+Resolution: 1600x1200
+Aspect ratio: 4:3 landscape
+Prompt:
+Photorealistic salon tools and premium hair products arranged neatly on a clean counter, scissors, brush, clips, styling products, warm natural light, refined beauty studio atmosphere, shallow depth of field, no readable brand labels, no text, no watermark.
+
+Suggested filename:
+salon-products-tools.jpg
+
+5. Salon Reception / Entrance
+Use for: location/contact section
+Resolution: 1800x1200
+Aspect ratio: 3:2 landscape
+Prompt:
+Photorealistic modern salon reception area, welcoming front desk, clean interior, soft warm lighting, professional small business feel, elegant and uncluttered, wide composition, no text, no logos, no watermark.
+
+Suggested filename:
+salon-reception.jpg
+
+6. Happy Client Testimonial Style
+Use for: review/trust section
+Resolution: 1600x2000
+Aspect ratio: 4:5 portrait
+Prompt:
+Photorealistic happy salon client after a fresh hairstyle, natural smile, relaxed confident expression, modern salon background softly blurred, warm flattering light, authentic testimonial-style photography, no text, no logos, no watermark.
+
+Suggested filename:
+salon-client-review.jpg
+
+7. Team Photo
+Use for: about section
+Resolution: 1800x1200
+Aspect ratio: 3:2 landscape
+Prompt:
+Photorealistic small salon team portrait, 2 to 4 stylists standing naturally inside a modern salon, friendly professional expressions, warm daylight, clean background, authentic local business photography, no text, no logos, no watermark.
+
+Suggested filename:
+salon-team.jpg
+
+8. Before And After Hair Transformation
+Use for: proof/results section
+Resolution: 1800x1200
+Aspect ratio: 3:2 landscape
+Prompt:
+Photorealistic before and after hair transformation image concept, same client shown in two clean side-by-side portrait frames, improved hairstyle and color on the after side, realistic salon lighting, professional beauty portfolio style, no text labels, no logos, no watermark.
+
+Suggested filename:
+salon-before-after.jpg
+
+==================================================
+DENTAL / CLINIC BUSINESS DEMO
+==================================================
+
+1. Clinic Hero Image
+Use for: top hero section
+Resolution: 2400x1350 or 1920x1080
+Aspect ratio: 16:9 landscape
+Prompt:
+Photorealistic modern dental clinic interior, clean treatment room, dental chair visible, soft daylight, calm trustworthy medical atmosphere, bright white and teal color accents, professional local clinic feel, wide horizontal website hero composition, no text, no logos, no watermark.
+
+Suggested filename:
+clinic-hero.jpg
+
+2. Clinic Reception Area
+Use for: trust/location section
+Resolution: 1800x1200
+Aspect ratio: 3:2 landscape
+Prompt:
+Photorealistic clean clinic reception area, welcoming front desk, comfortable waiting chairs, soft daylight, modern healthcare interior, calm and trustworthy atmosphere, uncluttered composition, no text, no logos, no watermark.
+
+Suggested filename:
+clinic-reception.jpg
+
+3. Dentist Smiling Naturally
+Use for: about/trust section
+Resolution: 1600x2000
+Aspect ratio: 4:5 portrait
+Prompt:
+Photorealistic portrait of a friendly dentist in a modern clinic, natural smile, professional medical clothing, calm confident expression, softly blurred clinic background, bright clean lighting, trustworthy local healthcare photography, no text, no logos, no watermark.
+
+Suggested filename:
+clinic-dentist.jpg
+
+4. Patient Consultation Moment
+Use for: process section
+Resolution: 1800x1200
+Aspect ratio: 3:2 landscape
+Prompt:
+Photorealistic dentist consulting with a patient in a modern clinic, friendly conversation, patient seated comfortably, calm healthcare environment, natural daylight, professional and reassuring mood, no text, no logos, no watermark.
+
+Suggested filename:
+clinic-consultation.jpg
+
+5. Dental Equipment Close-Up
+Use for: service/detail section
+Resolution: 1600x1600
+Aspect ratio: 1:1 square
+Prompt:
+Photorealistic close-up of clean dental tools and equipment in a modern clinic, sterile professional setup, soft reflections, bright clinical lighting, shallow depth of field, trustworthy healthcare detail image, no text, no logos, no watermark.
+
+Suggested filename:
+clinic-equipment.jpg
+
+6. Treatment Room Wide Shot
+Use for: service/trust section
+Resolution: 1800x1200
+Aspect ratio: 3:2 landscape
+Prompt:
+Photorealistic wide shot of a modern dental treatment room, dental chair, clean counters, equipment organized, bright calm lighting, professional medical interior, no people, no text, no logos, no watermark.
+
+Suggested filename:
+clinic-treatment-room.jpg
+
+7. Patient-Friendly Waiting Area
+Use for: trust section
+Resolution: 1800x1200
+Aspect ratio: 3:2 landscape
+Prompt:
+Photorealistic comfortable clinic waiting area, clean seating, soft daylight, calm colors, small plants, modern healthcare office atmosphere, welcoming and professional, no text, no logos, no watermark.
+
+Suggested filename:
+clinic-waiting-area.jpg
+
+8. Clinic Team Photo
+Use for: about section
+Resolution: 1800x1200
+Aspect ratio: 3:2 landscape
+Prompt:
+Photorealistic small dental clinic team portrait, dentist and assistants standing naturally in a bright modern clinic, friendly professional expressions, clean healthcare setting, authentic local clinic photography, no text, no logos, no watermark.
+
+Suggested filename:
+clinic-team.jpg
+
+==================================================
+RESTAURANT / CAFE BUSINESS DEMO
+==================================================
+
+1. Cafe Hero Image
+Use for: top hero section
+Resolution: 2400x1350 or 1920x1080
+Aspect ratio: 16:9 landscape
+Prompt:
+Photorealistic cozy modern cafe interior, warm daylight, wood tables, coffee counter, customers casually dining, inviting local business atmosphere, green and warm amber accents, editorial restaurant photography, wide horizontal website hero composition, no text, no logos, no watermark.
+
+Suggested filename:
+cafe-hero.jpg
+
+2. Front Counter / Barista Area
+Use for: about or service section
+Resolution: 1800x1200
+Aspect ratio: 3:2 landscape
+Prompt:
+Photorealistic cafe front counter with barista area, espresso machine, pastries displayed neatly, warm natural light, cozy modern interior, authentic local cafe feel, no readable menu text, no logos, no watermark.
+
+Suggested filename:
+cafe-counter.jpg
+
+3. Signature Dish Close-Up
+Use for: menu card
+Resolution: 1600x1600
+Aspect ratio: 1:1 square
+Prompt:
+Photorealistic close-up of a beautifully plated cafe brunch dish, fresh ingredients, natural window light, shallow depth of field, appetizing restaurant photography, clean table setting, no text, no logos, no watermark.
+
+Suggested filename:
+cafe-food-1.jpg
+
+4. Coffee / Drink Close-Up
+Use for: menu card or hero detail
+Resolution: 1600x1600
+Aspect ratio: 1:1 square
+Prompt:
+Photorealistic close-up of a specialty latte on a cafe table, latte art visible, warm natural light, cozy background blur, premium cafe photography, no text, no logos, no watermark.
+
+Suggested filename:
+cafe-coffee.jpg
+
+5. Customers Dining Naturally
+Use for: trust/social proof section
+Resolution: 1800x1200
+Aspect ratio: 3:2 landscape
+Prompt:
+Photorealistic small group of customers enjoying coffee and food in a cozy cafe, natural candid moment, warm daylight, relaxed local business atmosphere, tasteful composition, no text, no logos, no watermark.
+
+Suggested filename:
+cafe-customers.jpg
+
+6. Restaurant / Cafe Storefront
+Use for: location/contact section
+Resolution: 1800x1200
+Aspect ratio: 3:2 landscape
+Prompt:
+Photorealistic exterior storefront of a cozy modern cafe, welcoming entrance, clean windows, warm lights inside, local neighborhood business feel, daytime, no readable fake text, no logos, no watermark.
+
+Suggested filename:
+cafe-storefront.jpg
+
+7. Table Setup
+Use for: reservation/private event section
+Resolution: 1800x1200
+Aspect ratio: 3:2 landscape
+Prompt:
+Photorealistic cafe table setup for two, plates, cutlery, coffee cups, simple flowers, warm natural light, cozy inviting restaurant atmosphere, clean composition, no text, no logos, no watermark.
+
+Suggested filename:
+cafe-table-setup.jpg
+
+8. Staff Serving Food Or Coffee
+Use for: trust/about section
+Resolution: 1800x1200
+Aspect ratio: 3:2 landscape
+Prompt:
+Photorealistic cafe staff member serving coffee or food to a customer, friendly natural moment, warm light, cozy cafe interior, authentic local business photography, no text, no logos, no watermark.
+
+Suggested filename:
+cafe-staff-serving.jpg
+
+9. Catering / Event Setup
+Use for: catering lead section
+Resolution: 1800x1200
+Aspect ratio: 3:2 landscape
+Prompt:
+Photorealistic cafe catering setup on a table, pastries, sandwiches, coffee service, small event arrangement, warm natural lighting, professional but approachable local catering photography, no text, no logos, no watermark.
+
+Suggested filename:
+cafe-catering.jpg
+
+10. Kitchen / Prep Shot
+Use for: behind-the-scenes section
+Resolution: 1800x1200
+Aspect ratio: 3:2 landscape
+Prompt:
+Photorealistic behind-the-scenes cafe kitchen prep shot, fresh ingredients, chef or staff hands preparing food, clean workspace, warm natural light, authentic restaurant process photography, no text, no logos, no watermark.
+
+Suggested filename:
+cafe-prep.jpg
+
+==================================================
+UNIVERSAL WEBSITE IMAGE PROMPTS
+==================================================
+
+1. Local Business Owner Portrait
+Use for: any demo about section
+Resolution: 1600x2000
+Aspect ratio: 4:5 portrait
+Prompt:
+Photorealistic portrait of a small business owner standing inside their business, friendly confident expression, natural daylight, professional but approachable local business photography, softly blurred background, no text, no logos, no watermark.
+
+Suggested filename:
+business-owner.jpg
+
+2. Happy Customer Testimonial
+Use for: reviews/trust section
+Resolution: 1600x2000
+Aspect ratio: 4:5 portrait
+Prompt:
+Photorealistic happy customer testimonial-style portrait inside a local business, natural smile, relaxed expression, warm daylight, authentic and trustworthy mood, softly blurred background, no text, no logos, no watermark.
+
+Suggested filename:
+happy-customer.jpg
+
+3. Service Detail Close-Up
+Use for: service card
+Resolution: 1600x1600
+Aspect ratio: 1:1 square
+Prompt:
+Photorealistic close-up of a local business service detail, clean composition, natural light, shallow depth of field, premium but realistic photography, no text, no logos, no watermark.
+
+Suggested filename:
+service-detail.jpg
+
+4. Storefront / Location Image
+Use for: contact/location section
+Resolution: 1800x1200
+Aspect ratio: 3:2 landscape
+Prompt:
+Photorealistic storefront of a clean welcoming local business, inviting entrance, natural daylight, professional neighborhood business feel, no readable fake text, no logos, no watermark.
+
+Suggested filename:
+storefront.jpg
+
+==================================================
+THUMBNAIL / FIVERR DISPLAY IMAGE PROMPTS
+==================================================
+
+1. Landing Page Gig Thumbnail
+Resolution: 1280x769 preferred for Fiverr
+Aspect ratio: about 1.66:1 landscape
+Prompt:
+Create a clean Fiverr gig thumbnail for a premium local business landing page service. Text must read exactly: "Premium Landing Page". Show a laptop and phone mockup with a modern salon/clinic/cafe website preview, white background, teal accent, small visual icons for mobile, leads, and fast delivery, bold readable typography, high contrast, professional, no clutter.
+
+Suggested filename:
+fiverr-landing-page-thumbnail.png
+
+2. FAQ Chatbot Gig Thumbnail
+Resolution: 1280x769 preferred for Fiverr
+Aspect ratio: about 1.66:1 landscape
+Prompt:
+Create a clean Fiverr gig thumbnail for an AI FAQ chatbot widget service. Text must read exactly: "AI FAQ Chatbot". Show a website screen with a chat bubble answering business FAQs, white background, teal accent, small support and lead icons, bold readable typography, modern professional style, no clutter.
+
+Suggested filename:
+fiverr-chatbot-thumbnail.png
+
+3. Lead Automation Gig Thumbnail
+Resolution: 1280x769 preferred for Fiverr
+Aspect ratio: about 1.66:1 landscape
+Prompt:
+Create a clean Fiverr gig thumbnail for lead capture automation. Text must read exactly: "Lead Capture Automation". Show a website form flowing into Google Sheets, email, and WhatsApp icons, white background, teal accent, neat workflow arrows, bold readable typography, professional small business style, no clutter.
+
+Suggested filename:
+fiverr-lead-automation-thumbnail.png
+
+4. Booking Form Automation Thumbnail
+Resolution: 1280x769 preferred for Fiverr
+Aspect ratio: about 1.66:1 landscape
+Prompt:
+Create a clean Fiverr gig thumbnail for booking form automation. Text must read exactly: "Booking Form Setup". Show a booking form, calendar, email notification, Google Sheets row, and WhatsApp handoff, white background, teal accent, clean workflow layout, bold readable typography, professional and trustworthy.
+
+Suggested filename:
+fiverr-booking-form-thumbnail.png
+
+5. Website Redesign Audit Thumbnail
+Resolution: 1280x769 preferred for Fiverr
+Aspect ratio: about 1.66:1 landscape
+Prompt:
+Create a clean Fiverr gig thumbnail for a website redesign audit. Text must read exactly: "Website Redesign Audit". Show before and after website screens, checklist marks for mobile, CTA, speed, and trust, white background, teal accent, urgent but professional style, bold readable typography, no clutter.
+
+Suggested filename:
+fiverr-redesign-audit-thumbnail.png
+
+==================================================
+PHOTO SELECTION CHECKLIST
+==================================================
+
+Before sending me images, check:
+- Is the subject clear within 2 seconds?
+- Is it sharp on mobile?
+- Is there enough empty space for headline text if used as a hero?
+- Does it look like a real local business, not a fake stock ad?
+- Are faces/hands natural?
+- Is there no random text or watermark?
+- Does the color mood match the business type?
+
+Best hero photo rule:
+Pick the image that makes the business feel real, trustworthy, and worth contacting.

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="SaaS app demo cover">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#020817"/><stop offset=".55" stop-color="#0a1230"/><stop offset="1" stop-color="#4fd8ff"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="1600" height="1000" fill="url(#g)"/>
+  <g opacity=".18" stroke="#fff"><path d="M120 160H1480M120 300H1480M120 440H1480M120 580H1480M120 720H1480"/><path d="M240 80V920M480 80V920M720 80V920M960 80V920M1200 80V920M1440 80V920"/></g>
+  <g filter="url(#glow)"><rect x="820" y="210" width="520" height="420" rx="34" fill="#071528" stroke="#61d9ff" stroke-width="5"/><rect x="880" y="284" width="210" height="34" rx="17" fill="#61d9ff"/><rect x="880" y="360" width="380" height="26" rx="13" fill="#7d7cff" opacity=".78"/><rect x="880" y="420" width="310" height="26" rx="13" fill="#72ffc7" opacity=".72"/><circle cx="1225" cy="524" r="58" fill="none" stroke="#ff7b2f" stroke-width="16"/><path d="M970 660l-96 96h430" stroke="#61d9ff" stroke-width="16" stroke-linecap="round" fill="none"/></g>
+  <text x="92" y="150" fill="#7fdfff" font-family="Arial, sans-serif" font-weight="800" font-size="44">SHADOW RISER DEMO</text>
+  <text x="92" y="250" fill="#fff" font-family="Arial, sans-serif" font-weight="900" font-size="108">SaaS Launch Page</text>
+  <text x="96" y="326" fill="#c7d8e8" font-family="Arial, sans-serif" font-size="42">Demo request, waitlist, onboarding handoff</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Real estate demo cover">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070705"/><stop offset=".52" stop-color="#17110c"/><stop offset="1" stop-color="#f3cc74"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="1600" height="1000" fill="url(#g)"/>
+  <path d="M0 790 C260 650 480 720 740 560 C1040 380 1240 470 1600 300 L1600 1000 L0 1000Z" fill="#05070c" opacity=".72"/>
+  <g filter="url(#glow)" fill="none" stroke-linejoin="round"><path d="M820 680V420l210-155 210 155v260" stroke="#f3cc74" stroke-width="20"/><path d="M940 680V510h180v170M760 680h560" stroke="#4fd8ff" stroke-width="16"/><path d="M1030 265l270 196" stroke="#ff7b2f" stroke-width="12"/></g>
+  <text x="92" y="150" fill="#f3cc74" font-family="Arial, sans-serif" font-weight="800" font-size="44">SHADOW RISER DEMO</text>
+  <text x="92" y="250" fill="#fff" font-family="Arial, sans-serif" font-weight="900" font-size="108">Property Viewing Funnel</text>
+  <text x="96" y="326" fill="#e8dcc8" font-family="Arial, sans-serif" font-size="42">Listings, budget filter, viewing requests</text>
+</svg>

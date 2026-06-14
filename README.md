@@ -1,111 +1,24 @@
-# Saim Mirza UI/UX Designer Portfolio
+# Saim Mirza | Premium React & Voice AI Portfolio
 
-Professional UI/UX designer portfolio for landing pages, web interfaces, chatbot UI, lead capture flows, booking/contact flows, and AI-assisted product evaluation.
+A modern, high-end React portfolio website built to showcase elite UI/UX design, front-end automation, and custom Web3Forms & Vapi AI Voice Agent integrations.
 
-Live site:
-[https://styleauraofficial1-cloud.github.io/Web-Demo/](https://styleauraofficial1-cloud.github.io/Web-Demo/)
+Live site: [https://styleauraofficial1-cloud.github.io/Web-Demo/](https://styleauraofficial1-cloud.github.io/Web-Demo/)
 
-GitHub repo:
-[https://github.com/styleauraofficial1-cloud/Web-Demo](https://github.com/styleauraofficial1-cloud/Web-Demo)
+## Elite Features & Technology Stack
 
-## Public Showcase
+- **Framework:** React + Vite + TailwindCSS for a highly responsive, performant architecture.
+- **Buttery Smooth Scroll:** Powered by `Lenis` for smooth, expensive-feeling physics.
+- **WebGL 3D Hero:** Custom React Three Fiber canvas rendering a slow-rotating 3D abstract object reacting to user's cursor.
+- **Bespoke Cursor:** A glowing mouse-following blob that dynamically morphs and interacts with elements on hover.
+- **Apple-Style Animations:** Implemented using `GSAP` and `ScrollTrigger` for fluid reveals, letter animations, and magnetic CTAs.
+- **Vapi AI Voice Clone Widget:** A fully connected live Voice Assistant widget allowing prospective clients to call Saim's AI clone directly on-page.
+- **Web3Forms Integration:** Secure, zero-backend contact forms routing inquiries instantly to inbox.
+- **Interactive Labs:** Built-in industry demos for Car Dealerships, Cafe/Restaurants, Dental Clinics, and Salons with simulated automation previews and custom AI voice scripts.
 
-Open locally:
+---
 
-- `index.html` - entry page that opens the showcase.
-- `portfolio-index.html` - main professional UI/UX portfolio hub.
-- `showcase.css` - shared premium visual system.
-- `showcase.js` - shared interactions and animations.
+## Local Development (Source Code)
 
-Case studies:
+The source code for this React app is managed locally. Pushing to `main` deploys the built static pages.
 
-- `case-studies/local-business-landing-page.html` - full local-business UI/UX case study.
-- `case-studies/salon-beauty-booking.html` - full salon booking UI/UX case study.
-- `case-studies/lead-capture-automation.html` - full lead capture workflow UI/UX case study.
-- `demos/salon-beauty-demo.html` - Maison Liora beauty studio case study.
-- `demos/dental-clinic-demo.html` - Vera Dental House clinic case study.
-- `demos/restaurant-cafe-demo.html` - Juniper Table cafe case study.
-
-Interactive automation prototypes:
-
-- `interactive-demos/lead-automation-demo.html` - simulated lead capture workflow with table, timeline, alert, WhatsApp handoff, and follow-up status.
-- `interactive-demos/booking-flow-demo.html` - multi-step booking/contact flow with progress, summary state, and handoff preview.
-- `interactive-demos/chatbot-widget-demo.html` - FAQ chatbot widget prototype with quick replies and contact handoff thinking.
-- `interactive-demos/redesign-audit-demo.html` - website audit simulator for CTA clarity, mobile layout, trust signals, hierarchy, and form friction.
-
-Public portfolio features:
-
-- Saim Mirza hero section with role positioning
-- About, skills, process, services, and contact sections
-- 6 concept project cards with honest UI/UX project framing
-- 3 full case-study pages for featured portfolio projects
-- 4 interactive automation concept demos for lead capture, booking, chatbot FAQ, and redesign audits
-- More interface concepts for clinic, cafe, chatbot, redesign audit, booking flow, and AI interface work
-- New generated portfolio image pack integrated from `assets/portfolio_images_renamed_batches/`
-- Dedicated live demo section linking to salon, clinic, and restaurant subpages
-- Polished resume PDF at `assets/Saim-Mirza-UIUX-Resume.pdf`
-- Expandable case-study breakdowns
-- Premium hero interface mockup
-- Animated wordmark headings
-- Scroll progress indicator
-- Cursor glow and image spotlight effects
-- Magnetic buttons
-- Hover tilt cards
-- Moving trust marquee
-- Interactive UI/UX lab for websites, SaaS screens, dashboards, and mobile flows
-- Animated interface preview with responsive metrics and handoff logic states
-- Front-end automation simulations that clearly avoid claiming live Google Sheets, Zapier, WhatsApp, or email API integrations
-- Clickable image galleries
-- Salon before/after slider
-- Lead/contact form prototypes
-- FAQ assistant widgets
-- Mobile-responsive layout
-
-## Assets
-
-Clean public asset names live in `assets/`, including:
-
-- `salon-*` images for the beauty case study
-- `clinic-*` images for the healthcare case study
-- `cafe-*` images for the hospitality case study
-- `showcase-presentation.png` for the main portfolio page
-
-The original generated image filenames may still exist locally, but the public site uses the cleaned asset names.
-
-## Fiverr And Outreach Materials
-
-These files are for private business setup and are not needed for the public portfolio site:
-
-- `gig-drafts.md` - Fiverr gig drafts.
-- `pricing-table.md` - starter pricing table.
-- `outreach-scripts.md` - Fiverr, WhatsApp/email, and social DM scripts.
-- `7-day-action-plan.md` - launch plan.
-- `daily-checklist.md` - daily outreach checklist.
-- `image-prompts-and-specs.txt` - image prompt/spec sheet for portfolio visuals.
-- `fiverr-gig-image-prompts-premium.txt` - premium Fiverr gig image prompts, 5 images per gig.
-
-## Fiverr Image Prompt Pack
-
-The premium gig-image prompt pack is here:
-
-- `fiverr-gig-image-prompts-premium.txt`
-
-It includes:
-
-- 5 Fiverr gigs
-- 1 main image prompt per gig
-- 4 side/gallery image prompts per gig
-- Resolution specs
-- Suggested filenames
-- Premium visual style guidance
-
-## Deployment Notes
-
-The public site has been uploaded to:
-
-- `styleauraofficial1-cloud/Web-Demo`
-
-GitHub Pages serves from the `main` branch root.
-
-Live URL:
-[https://styleauraofficial1-cloud.github.io/Web-Demo/](https://styleauraofficial1-cloud.github.io/Web-Demo/)
+To modify the site, configure your settings in the source folder, run `npm run build`, and publish the production build.
