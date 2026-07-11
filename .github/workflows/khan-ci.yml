@@ -1,0 +1,31 @@
+name: Khan Reliability Spine
+
+on:
+  push:
+    branches:
+      - "khan/**"
+    paths:
+      - "khan/**"
+      - ".github/workflows/khan-ci.yml"
+  pull_request:
+    paths:
+      - "khan/**"
+      - ".github/workflows/khan-ci.yml"
+
+jobs:
+  python-reference-spine:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: khan
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run reliability and security tests
+        run: python scripts/test.py
+      - name: Execute connected Khan loop
+        run: python scripts/khan.py --home ./ci-runtime demo
+      - name: Verify causal chain and evidence
+        run: python scripts/khan.py --home ./ci-runtime verify
